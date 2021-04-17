@@ -9,3 +9,4 @@ export const StyledActorCard = styled(SearchCard)`
     font-weight: bold;
   }
 `;
+  
