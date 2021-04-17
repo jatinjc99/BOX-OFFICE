@@ -32,11 +32,10 @@ const Starred = () => {
 
   return (
     <MainPageLayout>
-      {' '}
-      {isLoading && <div> shows are still loading </div>}
-      {error && <div> Error occured </div>}
-      {!isLoading && !shows && <div> no shows were added </div>}
-      {!isLoading && !error && <ShowGrid data={shows} />}
+      {isLoading && <div>Shows are still loading</div>}
+      {error && <div>Error occured: {error}</div>}
+      {!isLoading && !shows && <div>No shows were added</div>}
+      {!isLoading && !error && shows && <ShowGrid data={shows} />}
     </MainPageLayout>
   );
 };
